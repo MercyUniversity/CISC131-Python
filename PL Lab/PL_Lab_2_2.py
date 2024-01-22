@@ -23,7 +23,8 @@ temp_celsius = float(input('Please enter a temperature in Celsius: '))
 temp_fahr = 9/5*temp_celsius+32
 
 # print result on screen
-print(temp_fahr)
+# with format using f-string
+print(f'converted temperature: {temp_fahr:.2f}')
 
 ###############################################################################
 # ask user's input
@@ -37,9 +38,8 @@ score_4 = int(input('Please Enter your fourth test score: '))
 # simple math to calculate average
 average = (score_1 + score_2 + score_3 + score_4)/4
 
-# print result
-print('Your average score is ', average)
-
+# print result with 2 decimal point format
+print(f'Your average score is {average:.2f}')
 ###############################################################################
 
 # assign variables
@@ -52,4 +52,4 @@ number_of_years = 20
 present_value = future_value/((1+annual_interest_rate)**number_of_years)
 
 # print with 2 decimal point format
-print(f'The amount of deposit today is {present_value:.2f}')
+print(f'The amount of deposit today: $ {present_value:.2f}')
