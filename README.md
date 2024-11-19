@@ -14,11 +14,11 @@ Originally repo: https://github.com/MercyCollegeCS/CISC131
 
 
 ## To-do
-- clean up code
-- update lab questions and code
+- [ ] clean up code
+- [ ] update lab questions and code solution
 
 Since 2022
-v. 1.3
+v. 1.35
 
 T. Wang, PhD
 
