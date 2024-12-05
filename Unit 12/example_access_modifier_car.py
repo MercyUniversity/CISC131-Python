@@ -25,21 +25,21 @@ class Car:
 # Instantiating the Car class
 my_car = Car("Toyota", "Corolla")
 
-# Accessing public attributes and methods
+# # Accessing public attributes and methods
 print(my_car.make)                 # Accessible
 my_car.start_car()                 # Accessible
 
-# Accessing protected attribute and method (not recommended)
+# # Accessing protected attribute and method (not recommended)
 print(my_car._engine_status)       # Accessible, but use with caution
 print(my_car._check_engine())      # Accessible, but use with caution
 
-# Trying to access private attribute and method
-try:
-    print(my_car.__mileage)          # Raises AttributeError
-    my_car.__update_mileage(50)      # Raises AttributeError
-except AttributeError as e:
-    print(e)
+# # Trying to access private attribute and method
+# try:
+#     # print(my_car.__mileage)          # Raises AttributeError
+#     my_car.__update_mileage(50)      # Raises AttributeError
+# except AttributeError as e:
+#     print(e)
     
-# Accessing private attribute and method using name mangling (not recommended)
+# # Accessing private attribute and method using name mangling (not recommended)
 print(my_car._Car__mileage)        # Accessible via name mangling
 my_car._Car__update_mileage(20)    # Accessible via name mangling

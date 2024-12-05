@@ -16,12 +16,12 @@ class Employee:
     def is_workday(day):
         return day.lower() not in ["saturday", "sunday"]
 
-# Usage
 emp1 = Employee("Alice", "Developer")
 emp2 = Employee("Bob", "Manager")
 
 emp1.work()  # Output: Alice is working as a Developer at TechCorp.
 emp2.work()  # Output: Bob is working as a Manager at TechCorp.
+
 
 Employee.change_company_name("InnovateCorp")  # Change class attribute for all instances
 emp1.work()  # Output: Alice is working as a Developer at InnovateCorp.
